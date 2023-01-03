@@ -1,8 +1,5 @@
-const getStudentsByLocation = (students, city) => {
-  if (Object.getPrototypeOf(students) !== Array.prototype)
-    return [];
-
-  return students.filter((student) => student.location.toLowerCase() === city.toLowerCase());
+function getStudentsByLocation(students, city) {
+  return students.filter((student) => student.location === city);
 }
 
 export default getStudentsByLocation;
