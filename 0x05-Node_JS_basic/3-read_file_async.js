@@ -18,7 +18,7 @@ const readData = (data) => {
   console.log(studentInfo);
 
   const students = studentsArray.map((student) => {
-    const fields = student.replace('\r', '').split(',');
+    const fields = student.replace('\n', '').split(',');
     return fields;
   });
 
